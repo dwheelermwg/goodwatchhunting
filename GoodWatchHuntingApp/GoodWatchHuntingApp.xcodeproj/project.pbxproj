@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */; };
+		00EC40EE1C18A82200CC43F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC40ED1C18A82200CC43F4 /* ViewController.swift */; };
+		00EC40F11C18A82200CC43F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC40EF1C18A82200CC43F4 /* Main.storyboard */; };
+		00EC40F31C18A82200CC43F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC40F21C18A82200CC43F4 /* Assets.xcassets */; };
+		00EC40F61C18A82200CC43F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC40F41C18A82200CC43F4 /* LaunchScreen.storyboard */; };
+		00EC41011C18A82200CC43F4 /* GoodWatchHuntingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC41001C18A82200CC43F4 /* GoodWatchHuntingAppTests.swift */; };
+		00EC410C1C18A82200CC43F4 /* GoodWatchHuntingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC410B1C18A82200CC43F4 /* GoodWatchHuntingAppUITests.swift */; };
+		00EC41111C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 00EC41101C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app */; };
+		00EC41171C18A82200CC43F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC41151C18A82200CC43F4 /* Interface.storyboard */; };
+		00EC41191C18A82200CC43F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC41181C18A82200CC43F4 /* Assets.xcassets */; };
+		00EC41201C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00EC411F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00EC41271C18A82200CC43F4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC41261C18A82200CC43F4 /* InterfaceController.swift */; };
+		00EC41291C18A82200CC43F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */; };
+		00EC412B1C18A82200CC43F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC412A1C18A82200CC43F4 /* NotificationController.swift */; };
+		00EC412D1C18A82200CC43F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC412C1C18A82200CC43F4 /* Assets.xcassets */; };
+		E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9CEFDF411CD8040160636 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00EC40FD1C18A82200CC43F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC40E01C18A82100CC43F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC40E71C18A82200CC43F4;
+			remoteInfo = GoodWatchHuntingApp;
+		};
+		00EC41081C18A82200CC43F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC40E01C18A82100CC43F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC40E71C18A82200CC43F4;
+			remoteInfo = GoodWatchHuntingApp;
+		};
+		00EC41121C18A82200CC43F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC40E01C18A82100CC43F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC410F1C18A82200CC43F4;
+			remoteInfo = "GoodWatchHuntingApp WatchKit App";
+		};
+		00EC41211C18A82200CC43F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC40E01C18A82100CC43F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC411E1C18A82200CC43F4;
+			remoteInfo = "GoodWatchHuntingApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00EC41341C18A82200CC43F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00EC41201C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC41381C18A82200CC43F4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				00EC41111C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00EC40E81C18A82200CC43F4 /* GoodWatchHuntingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWatchHuntingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00EC40ED1C18A82200CC43F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00EC40F01C18A82200CC43F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00EC40F21C18A82200CC43F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC40F51C18A82200CC43F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00EC40F71C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC40FC1C18A82200CC43F4 /* GoodWatchHuntingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWatchHuntingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC41001C18A82200CC43F4 /* GoodWatchHuntingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWatchHuntingAppTests.swift; sourceTree = "<group>"; };
+		00EC41021C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC41071C18A82200CC43F4 /* GoodWatchHuntingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWatchHuntingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC410B1C18A82200CC43F4 /* GoodWatchHuntingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWatchHuntingAppUITests.swift; sourceTree = "<group>"; };
+		00EC410D1C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC41101C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodWatchHuntingApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC41161C18A82200CC43F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		00EC41181C18A82200CC43F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC411A1C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC411F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GoodWatchHuntingApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC41251C18A82200CC43F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		00EC41261C18A82200CC43F4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		00EC412A1C18A82200CC43F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		00EC412C1C18A82200CC43F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC412E1C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC9CEFDF411CD8040160636 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00EC40E51C18A82200CC43F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC40F91C18A82200CC43F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC41041C18A82200CC43F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC411C1C18A82200CC43F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00EC40DF1C18A82100CC43F4 = {
+			isa = PBXGroup;
+			children = (
+				00EC40EA1C18A82200CC43F4 /* GoodWatchHuntingApp */,
+				00EC40FF1C18A82200CC43F4 /* GoodWatchHuntingAppTests */,
+				00EC410A1C18A82200CC43F4 /* GoodWatchHuntingAppUITests */,
+				00EC41141C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */,
+				00EC41231C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */,
+				00EC40E91C18A82200CC43F4 /* Products */,
+				8267E80FAA389753AC194BC0 /* Pods */,
+				85A5F28013CB0B5A1E88CB2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00EC40E91C18A82200CC43F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00EC40E81C18A82200CC43F4 /* GoodWatchHuntingApp.app */,
+				00EC40FC1C18A82200CC43F4 /* GoodWatchHuntingAppTests.xctest */,
+				00EC41071C18A82200CC43F4 /* GoodWatchHuntingAppUITests.xctest */,
+				00EC41101C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app */,
+				00EC411F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00EC40EA1C18A82200CC43F4 /* GoodWatchHuntingApp */ = {
+			isa = PBXGroup;
+			children = (
+				00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */,
+				00EC40ED1C18A82200CC43F4 /* ViewController.swift */,
+				00EC40EF1C18A82200CC43F4 /* Main.storyboard */,
+				00EC40F21C18A82200CC43F4 /* Assets.xcassets */,
+				00EC40F41C18A82200CC43F4 /* LaunchScreen.storyboard */,
+				00EC40F71C18A82200CC43F4 /* Info.plist */,
+			);
+			path = GoodWatchHuntingApp;
+			sourceTree = "<group>";
+		};
+		00EC40FF1C18A82200CC43F4 /* GoodWatchHuntingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00EC41001C18A82200CC43F4 /* GoodWatchHuntingAppTests.swift */,
+				00EC41021C18A82200CC43F4 /* Info.plist */,
+			);
+			path = GoodWatchHuntingAppTests;
+			sourceTree = "<group>";
+		};
+		00EC410A1C18A82200CC43F4 /* GoodWatchHuntingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00EC410B1C18A82200CC43F4 /* GoodWatchHuntingAppUITests.swift */,
+				00EC410D1C18A82200CC43F4 /* Info.plist */,
+			);
+			path = GoodWatchHuntingAppUITests;
+			sourceTree = "<group>";
+		};
+		00EC41141C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				00EC41151C18A82200CC43F4 /* Interface.storyboard */,
+				00EC41181C18A82200CC43F4 /* Assets.xcassets */,
+				00EC411A1C18A82200CC43F4 /* Info.plist */,
+			);
+			path = "GoodWatchHuntingApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		00EC41231C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00EC41261C18A82200CC43F4 /* InterfaceController.swift */,
+				00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */,
+				00EC412A1C18A82200CC43F4 /* NotificationController.swift */,
+				00EC412C1C18A82200CC43F4 /* Assets.xcassets */,
+				00EC412E1C18A82200CC43F4 /* Info.plist */,
+				00EC41241C18A82200CC43F4 /* Supporting Files */,
+			);
+			path = "GoodWatchHuntingApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		00EC41241C18A82200CC43F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00EC41251C18A82200CC43F4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8267E80FAA389753AC194BC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */,
+				EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85A5F28013CB0B5A1E88CB2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9CEFDF411CD8040160636 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00EC40E71C18A82200CC43F4 /* GoodWatchHuntingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC41391C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp" */;
+			buildPhases = (
+				F56DEDC6D8DCBDBC5EEF0C9A /* Check Pods Manifest.lock */,
+				00EC40E41C18A82200CC43F4 /* Sources */,
+				00EC40E51C18A82200CC43F4 /* Frameworks */,
+				00EC40E61C18A82200CC43F4 /* Resources */,
+				00EC41381C18A82200CC43F4 /* Embed Watch Content */,
+				9C028E5A90A317B053180826 /* Embed Pods Frameworks */,
+				B2E1FDB4B588B65B1D536A86 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC41131C18A82200CC43F4 /* PBXTargetDependency */,
+			);
+			name = GoodWatchHuntingApp;
+			productName = GoodWatchHuntingApp;
+			productReference = 00EC40E81C18A82200CC43F4 /* GoodWatchHuntingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00EC40FB1C18A82200CC43F4 /* GoodWatchHuntingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC413C1C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingAppTests" */;
+			buildPhases = (
+				00EC40F81C18A82200CC43F4 /* Sources */,
+				00EC40F91C18A82200CC43F4 /* Frameworks */,
+				00EC40FA1C18A82200CC43F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC40FE1C18A82200CC43F4 /* PBXTargetDependency */,
+			);
+			name = GoodWatchHuntingAppTests;
+			productName = GoodWatchHuntingAppTests;
+			productReference = 00EC40FC1C18A82200CC43F4 /* GoodWatchHuntingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00EC41061C18A82200CC43F4 /* GoodWatchHuntingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC413F1C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingAppUITests" */;
+			buildPhases = (
+				00EC41031C18A82200CC43F4 /* Sources */,
+				00EC41041C18A82200CC43F4 /* Frameworks */,
+				00EC41051C18A82200CC43F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC41091C18A82200CC43F4 /* PBXTargetDependency */,
+			);
+			name = GoodWatchHuntingAppUITests;
+			productName = GoodWatchHuntingAppUITests;
+			productReference = 00EC41071C18A82200CC43F4 /* GoodWatchHuntingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		00EC410F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC41351C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp WatchKit App" */;
+			buildPhases = (
+				00EC410E1C18A82200CC43F4 /* Resources */,
+				00EC41341C18A82200CC43F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC41221C18A82200CC43F4 /* PBXTargetDependency */,
+			);
+			name = "GoodWatchHuntingApp WatchKit App";
+			productName = "GoodWatchHuntingApp WatchKit App";
+			productReference = 00EC41101C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		00EC411E1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC41311C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp WatchKit Extension" */;
+			buildPhases = (
+				00EC411B1C18A82200CC43F4 /* Sources */,
+				00EC411C1C18A82200CC43F4 /* Frameworks */,
+				00EC411D1C18A82200CC43F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoodWatchHuntingApp WatchKit Extension";
+			productName = "GoodWatchHuntingApp WatchKit Extension";
+			productReference = 00EC411F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00EC40E01C18A82100CC43F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MyWebGrocer;
+				TargetAttributes = {
+					00EC40E71C18A82200CC43F4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					00EC40FB1C18A82200CC43F4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 00EC40E71C18A82200CC43F4;
+					};
+					00EC41061C18A82200CC43F4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 00EC40E71C18A82200CC43F4;
+					};
+					00EC410F1C18A82200CC43F4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					00EC411E1C18A82200CC43F4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 00EC40E31C18A82100CC43F4 /* Build configuration list for PBXProject "GoodWatchHuntingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00EC40DF1C18A82100CC43F4;
+			productRefGroup = 00EC40E91C18A82200CC43F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00EC40E71C18A82200CC43F4 /* GoodWatchHuntingApp */,
+				00EC40FB1C18A82200CC43F4 /* GoodWatchHuntingAppTests */,
+				00EC41061C18A82200CC43F4 /* GoodWatchHuntingAppUITests */,
+				00EC410F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */,
+				00EC411E1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00EC40E61C18A82200CC43F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC40F61C18A82200CC43F4 /* LaunchScreen.storyboard in Resources */,
+				00EC40F31C18A82200CC43F4 /* Assets.xcassets in Resources */,
+				00EC40F11C18A82200CC43F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC40FA1C18A82200CC43F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC41051C18A82200CC43F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC410E1C18A82200CC43F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC41191C18A82200CC43F4 /* Assets.xcassets in Resources */,
+				00EC41171C18A82200CC43F4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC411D1C18A82200CC43F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC412D1C18A82200CC43F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C028E5A90A317B053180826 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2E1FDB4B588B65B1D536A86 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56DEDC6D8DCBDBC5EEF0C9A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00EC40E41C18A82200CC43F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC40EE1C18A82200CC43F4 /* ViewController.swift in Sources */,
+				00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC40F81C18A82200CC43F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC41011C18A82200CC43F4 /* GoodWatchHuntingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC41031C18A82200CC43F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC410C1C18A82200CC43F4 /* GoodWatchHuntingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC411B1C18A82200CC43F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC412B1C18A82200CC43F4 /* NotificationController.swift in Sources */,
+				00EC41291C18A82200CC43F4 /* ExtensionDelegate.swift in Sources */,
+				00EC41271C18A82200CC43F4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00EC40FE1C18A82200CC43F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC40E71C18A82200CC43F4 /* GoodWatchHuntingApp */;
+			targetProxy = 00EC40FD1C18A82200CC43F4 /* PBXContainerItemProxy */;
+		};
+		00EC41091C18A82200CC43F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC40E71C18A82200CC43F4 /* GoodWatchHuntingApp */;
+			targetProxy = 00EC41081C18A82200CC43F4 /* PBXContainerItemProxy */;
+		};
+		00EC41131C18A82200CC43F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC410F1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */;
+			targetProxy = 00EC41121C18A82200CC43F4 /* PBXContainerItemProxy */;
+		};
+		00EC41221C18A82200CC43F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC411E1C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */;
+			targetProxy = 00EC41211C18A82200CC43F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00EC40EF1C18A82200CC43F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC40F01C18A82200CC43F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00EC40F41C18A82200CC43F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC40F51C18A82200CC43F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		00EC41151C18A82200CC43F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC41161C18A82200CC43F4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00EC412F1C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00EC41301C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00EC41321C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		00EC41331C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		00EC41361C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		00EC41371C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		00EC413A1C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoodWatchHuntingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00EC413B1C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoodWatchHuntingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00EC413D1C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoodWatchHuntingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWatchHuntingApp.app/GoodWatchHuntingApp";
+			};
+			name = Debug;
+		};
+		00EC413E1C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoodWatchHuntingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWatchHuntingApp.app/GoodWatchHuntingApp";
+			};
+			name = Release;
+		};
+		00EC41401C18A82200CC43F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoodWatchHuntingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoodWatchHuntingApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		00EC41411C18A82200CC43F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoodWatchHuntingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoodWatchHuntingApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00EC40E31C18A82100CC43F4 /* Build configuration list for PBXProject "GoodWatchHuntingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC412F1C18A82200CC43F4 /* Debug */,
+				00EC41301C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC41311C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC41321C18A82200CC43F4 /* Debug */,
+				00EC41331C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC41351C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC41361C18A82200CC43F4 /* Debug */,
+				00EC41371C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC41391C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC413A1C18A82200CC43F4 /* Debug */,
+				00EC413B1C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC413C1C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC413D1C18A82200CC43F4 /* Debug */,
+				00EC413E1C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC413F1C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC41401C18A82200CC43F4 /* Debug */,
+				00EC41411C18A82200CC43F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00EC40E01C18A82100CC43F4 /* Project object */;
+}
