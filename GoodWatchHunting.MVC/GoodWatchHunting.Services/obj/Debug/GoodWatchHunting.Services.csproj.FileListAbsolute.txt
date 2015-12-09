@@ -9,3 +9,5 @@ C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHun
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.csprojResolveAssemblyReference.cache
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.pdb
+C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.xml
