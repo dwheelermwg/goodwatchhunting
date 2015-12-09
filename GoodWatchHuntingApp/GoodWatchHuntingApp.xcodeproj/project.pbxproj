@@ -22,6 +22,7 @@
 		00EC41291C18A82200CC43F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */; };
 		00EC412B1C18A82200CC43F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC412A1C18A82200CC43F4 /* NotificationController.swift */; };
 		00EC412D1C18A82200CC43F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC412C1C18A82200CC43F4 /* Assets.xcassets */; };
+		00EC41441C18B23E00CC43F4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EC41431C18B23E00CC43F4 /* HealthKit.framework */; };
 		E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9CEFDF411CD8040160636 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 		00EC412A1C18A82200CC43F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		00EC412C1C18A82200CC43F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00EC412E1C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC41421C18B23E00CC43F4 /* GoodWatchHuntingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GoodWatchHuntingApp.entitlements; sourceTree = "<group>"; };
+		00EC41431C18B23E00CC43F4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CFC9CEFDF411CD8040160636 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */,
+				00EC41441C18B23E00CC43F4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +177,7 @@
 		00EC40EA1C18A82200CC43F4 /* GoodWatchHuntingApp */ = {
 			isa = PBXGroup;
 			children = (
+				00EC41421C18B23E00CC43F4 /* GoodWatchHuntingApp.entitlements */,
 				00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */,
 				00EC40ED1C18A82200CC43F4 /* ViewController.swift */,
 				00EC40EF1C18A82200CC43F4 /* Main.storyboard */,
@@ -244,6 +249,7 @@
 		85A5F28013CB0B5A1E88CB2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00EC41431C18B23E00CC43F4 /* HealthKit.framework */,
 				CFC9CEFDF411CD8040160636 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -356,6 +362,12 @@
 				TargetAttributes = {
 					00EC40E71C18A82200CC43F4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AEA8F3G8N8;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					00EC40FB1C18A82200CC43F4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -724,10 +736,14 @@
 			baseConfigurationReference = 1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GoodWatchHuntingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -736,10 +752,14 @@
 			baseConfigurationReference = EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GoodWatchHuntingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
