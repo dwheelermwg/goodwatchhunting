@@ -1,0 +1,7 @@
+GoodWatchHunting.MVC/packages/**
+GoodWatchHunting.MVC/**/bin
+GoodWatchHunting.MVC/**/obj
+AppleHealthKitAPI/packages/**
+AppleHealthKitAPI/**/bin
+AppleHealthKitAPI/**/obj
+!repositories.config

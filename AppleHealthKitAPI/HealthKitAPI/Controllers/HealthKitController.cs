@@ -107,5 +107,42 @@ namespace HealthKitAPI.Controllers
 
       return Json(tempEvent, JsonRequestBehavior.AllowGet);
     }
-  }
+
+    [System.Web.Http.HttpGet]
+    public async Task<JsonResult> AllUsers()
+    {
+      client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
+      database = client.GetDatabase("GoodWatchHunting");
+
+      var allEvents = new List<User>();
+      var eventCollection = database.GetCollection<BsonDocument>("User");
+      var filter = new BsonDocument();
+
+      using (var cursor = await eventCollection.FindAsync(filter))
+      {
+        while (await cursor.MoveNextAsync())
+        {
+          var batch = cursor.Current;
+          foreach (var document in batch)
+          {
+            var tempUser = new User();
+            tempUser.ApplicationGuid = document["ApplicationGuid"].AsString;
+            tempUser.UserGuid = document["UserGuid"].AsString;
+            tempUser.FirstName = document["FirstName"].AsString;
+            tempUser.LastName = document["LastName"].AsString;
+            tempUser.LastLogin = Convert.ToDateTime(document["Goal"].AsString);
+            tempUser.Experience = Convert.ToInt32(document["Experience"].AsString);
+            tempUser.Level = Convert.ToInt32(document["Level"].AsString);
+            tempUser.Age = Convert.ToInt32(document["Age"].AsString);
+            tempUser.Inches = Convert.ToInt32(document["Inches"].AsString);
+            tempUser.Feet = Convert.ToInt32(document["Feet"].AsString);
+            tempUser.StepCount = Convert.ToInt32(document["StepCount"].AsString);
+
+            allEvents.Add(tempUser);
+          }
+        }
+      }
+
+      return Json(allEvents, JsonRequestBehavior.AllowGet);
+    }  }
 }
