@@ -1,6 +1,6 @@
 ﻿namespace HealthKitData.Collections
 {
-  public class Events
+  public class Event
   {
     /// <summary>
     /// Gets or sets the event identifier.

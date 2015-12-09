@@ -39,9 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserEventService.cs" />
+    <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AppleHealthKitAPI\HealthKitData\HealthKitData.csproj">
+      <Project>{51d41c93-d94c-4ade-a8ea-3e0e1aacf629}</Project>
+      <Name>HealthKitData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GoodWatchHunting.Domain\GoodWatchHunting.Domain.csproj">
       <Project>{8776d828-2961-4d92-b169-cfd6ca463eab}</Project>
       <Name>GoodWatchHunting.Domain</Name>

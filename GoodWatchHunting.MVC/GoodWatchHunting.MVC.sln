@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.Services",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.Repositories", "GoodWatchHunting.Repositories\GoodWatchHunting.Repositories.csproj", "{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthKitData", "..\AppleHealthKitAPI\HealthKitData\HealthKitData.csproj", "{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
