@@ -161,9 +161,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\MongoTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthKitData\HealthKitData.csproj">
+      <Project>{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}</Project>
+      <Name>HealthKitData</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

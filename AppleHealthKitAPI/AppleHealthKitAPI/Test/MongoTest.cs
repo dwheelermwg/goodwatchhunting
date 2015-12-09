@@ -1,10 +1,7 @@
-﻿
-using System.Web.Configuration;
+﻿using System.Web.Configuration;
 using System.Web.Mvc;
+using HealthKitData.Collections;
 
-using AppleHealthKitAPI.Collections;
-
-using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace AppleHealthKitAPI.Test
@@ -24,6 +21,8 @@ namespace AppleHealthKitAPI.Test
     {
       var collection = _database.GetCollection<User>("User");
       collection.InsertOneAsync((model));
+
+      return new JsonResult();
     }
 
   }
