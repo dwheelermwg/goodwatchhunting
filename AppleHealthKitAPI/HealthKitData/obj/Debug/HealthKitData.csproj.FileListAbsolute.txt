@@ -1,0 +1,4 @@
+C:\Git\GoodWitchHunting\AppleHealthKitAPI\HealthKitData\bin\Debug\HealthKitData.dll
+C:\Git\GoodWitchHunting\AppleHealthKitAPI\HealthKitData\bin\Debug\HealthKitData.pdb
+C:\Git\GoodWitchHunting\AppleHealthKitAPI\HealthKitData\obj\Debug\HealthKitData.dll
+C:\Git\GoodWitchHunting\AppleHealthKitAPI\HealthKitData\obj\Debug\HealthKitData.pdb
