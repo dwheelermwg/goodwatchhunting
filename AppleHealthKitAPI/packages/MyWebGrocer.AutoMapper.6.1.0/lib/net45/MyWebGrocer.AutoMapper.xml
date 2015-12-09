@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebGrocer.AutoMapper</name>
+    </assembly>
+    <members>
+        <member name="T:MyWebGrocer.AutoMapper.AutoMapperRegistry">
+            <summary>
+            StructureMap IOC registry for AutoMapper.  Scans all MyWebGrocer assemblies looking for AutoMapper <see cref="T:AutoMapper.Profile"/> instances
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.AutoMapper.AutoMapperRegistry.#ctor">
+            <summary>
+            The registry constructor - performs the IOC registration
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.AutoMapper.AutoMapperRegistry.OnScan(StructureMap.Graph.IAssemblyScanner)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
