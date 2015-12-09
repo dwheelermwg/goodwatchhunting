@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
@@ -6,25 +7,24 @@ using System.Web.Mvc;
 using HealthKitData.Collections;
 
 using MongoDB.Bson;
-using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 
 namespace HealthKitAPI.Controllers
 {
   public class HealthKitController : Controller
   {
-    private static IMongoClient _client;
-    private static IMongoDatabase _database;
+    private static IMongoClient client;
+    private static IMongoDatabase database;
 
 
     [System.Web.Http.HttpGet]
-    public async Task<IMongoCollection<BsonDocument>> AllEvents()
+    public async Task<JsonResult> AllEvents()
     {
-      _client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
-      _database = _client.GetDatabase("GoodWatchHunting");
+      client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
+      database = client.GetDatabase("GoodWatchHunting");
 
-      var allEvents = new Collection<Events>();
-      var eventCollection = _database.GetCollection<BsonDocument>("Event");
+      var allEvents = new List<Event>();
+      var eventCollection = database.GetCollection<BsonDocument>("Event");
       var filter = new BsonDocument();
 
       using (var cursor = await eventCollection.FindAsync(filter))
@@ -34,11 +34,19 @@ namespace HealthKitAPI.Controllers
           var batch = cursor.Current;
           foreach (var document in batch)
           {
-            allEvents.Add(BsonSerializer.Deserialize<Events>(document));
+            var tempEvent = new Event();
+            tempEvent.EventId = Convert.ToInt32(document["EventId"].AsString);
+            tempEvent.EventName = document["EventName"].AsString;
+            tempEvent.Message = document["Message"].AsString;
+            tempEvent.EventType = (EventType)Convert.ToInt32(document["EventType"].AsString);
+            tempEvent.Goal = document["Goal"].AsString;
+
+            allEvents.Add(tempEvent);
           }
         }
       }
-      return eventCollection;
+
+      return Json(allEvents, JsonRequestBehavior.AllowGet);
     }
   }
 }
