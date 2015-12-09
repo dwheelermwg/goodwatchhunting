@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
@@ -47,6 +48,64 @@ namespace HealthKitAPI.Controllers
       }
 
       return Json(allEvents, JsonRequestBehavior.AllowGet);
+    }
+
+    [System.Web.Http.HttpGet]
+    public async Task<JsonResult> GetEventById(int id)
+    {
+      client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
+      database = client.GetDatabase("GoodWatchHunting");
+      var tempEvent = new Event();
+
+      var eventCollection = database.GetCollection<BsonDocument>("Event");
+      var filter = Builders<BsonDocument>.Filter.Eq("EventId", id.ToString(CultureInfo.InvariantCulture));
+
+      using (var cursor = await eventCollection.FindAsync(filter))
+      {
+        while (await cursor.MoveNextAsync())
+        {
+          var batch = cursor.Current;
+          foreach (var document in batch)
+          {           
+            tempEvent.EventId = Convert.ToInt32(document["EventId"].AsString);
+            tempEvent.EventName = document["EventName"].AsString;
+            tempEvent.Message = document["Message"].AsString;
+            tempEvent.EventType = (EventType)Convert.ToInt32(document["EventType"].AsString);
+            tempEvent.Goal = document["Goal"].AsString;
+          }
+        }
+      }
+
+      return Json(tempEvent, JsonRequestBehavior.AllowGet);
+    }
+
+    [System.Web.Http.HttpGet]
+    public async Task<JsonResult> GetEventByUserId(string userId)
+    {
+      client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
+      database = client.GetDatabase("GoodWatchHunting");
+      var tempEvent = new Event();
+
+      var eventCollection = database.GetCollection<BsonDocument>("Event");
+      var filter = Builders<BsonDocument>.Filter.Eq("UserId", userId.ToString(CultureInfo.InvariantCulture));
+
+      using (var cursor = await eventCollection.FindAsync(filter))
+      {
+        while (await cursor.MoveNextAsync())
+        {
+          var batch = cursor.Current;
+          foreach (var document in batch)
+          {
+            tempEvent.EventId = Convert.ToInt32(document["EventId"].AsString);
+            tempEvent.EventName = document["EventName"].AsString;
+            tempEvent.Message = document["Message"].AsString;
+            tempEvent.EventType = (EventType)Convert.ToInt32(document["EventType"].AsString);
+            tempEvent.Goal = document["Goal"].AsString;
+          }
+        }
+      }
+
+      return Json(tempEvent, JsonRequestBehavior.AllowGet);
     }
   }
 }

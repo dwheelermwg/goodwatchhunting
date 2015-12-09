@@ -12,9 +12,14 @@ namespace HealthKitAPI
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
       routes.MapRoute(
-        name: RoutesNames.HealthKit,
+        name: RoutesNames.AllEvents,
         url: RoutesTemplates.AllEvents,
         defaults: new { controller = "HealthKit", action = "AllEvents" });
+
+      routes.MapRoute(
+        name: RoutesNames.EventById,
+        url: RoutesTemplates.GetEventById,
+        defaults: new { controller = "HealthKit", action = "GetEventById" });
 
       routes.MapRoute(
         name: "Default",
