@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GoodWatchHuntingApp WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>GoodWatchHuntingApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Notification - GoodWatchHuntingApp WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>00EC40E71C18A82200CC43F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00EC40FB1C18A82200CC43F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00EC41061C18A82200CC43F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00EC410F1C18A82200CC43F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00EC411E1C18A82200CC43F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

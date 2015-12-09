@@ -6,3 +6,4 @@ C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodW
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\bin\Debug\GoodWatchHunting.Domain.pdb
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\obj\Debug\GoodWatchHunting.Domain.dll
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\obj\Debug\GoodWatchHunting.Domain.pdb
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\obj\Debug\GoodWatchHunting.Domain.csprojResolveAssemblyReference.cache

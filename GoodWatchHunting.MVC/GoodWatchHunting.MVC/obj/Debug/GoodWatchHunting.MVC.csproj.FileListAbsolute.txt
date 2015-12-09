@@ -2,7 +2,6 @@ C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHun
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.MVC.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.MVC.pdb
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\Antlr3.Runtime.dll
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\EntityFramework.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Domain.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Services.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\HealthKitData.dll
@@ -23,7 +22,6 @@ C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHun
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\HealthKitData.pdb
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Domain.pdb
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Services.pdb
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\EntityFramework.xml
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\Newtonsoft.Json.xml
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Net.Http.Formatting.xml
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Web.Http.xml
@@ -59,10 +57,7 @@ C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodW
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\HealthKitData.pdb
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Domain.pdb
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\GoodWatchHunting.Services.pdb
-C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\Antlr3.Runtime.pdb
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\Newtonsoft.Json.xml
-C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Web.Optimization.xml
-C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\EntityFramework.xml
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Web.Mvc.xml
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Web.Razor.xml
 C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.MVC\bin\System.Web.WebPages.xml
