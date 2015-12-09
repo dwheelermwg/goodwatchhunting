@@ -130,7 +130,7 @@ namespace HealthKitAPI.Controllers
             tempUser.UserGuid = document["UserGuid"].AsString;
             tempUser.FirstName = document["FirstName"].AsString;
             tempUser.LastName = document["LastName"].AsString;
-            tempUser.LastLogin = Convert.ToDateTime(document["Goal"].AsString);
+            tempUser.LastLogin = Convert.ToDateTime(document["LastLogin"].AsString);
             tempUser.Experience = Convert.ToInt32(document["Experience"].AsString);
             tempUser.Level = Convert.ToInt32(document["Level"].AsString);
             tempUser.Age = Convert.ToInt32(document["Age"].AsString);
