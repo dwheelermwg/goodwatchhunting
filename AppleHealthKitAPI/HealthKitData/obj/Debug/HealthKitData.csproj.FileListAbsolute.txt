@@ -1,5 +1,4 @@
 C:\Users\ckrobotham\Documents\goodwatchhunting\AppleHealthKitAPI\HealthKitData\bin\Debug\HealthKitData.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\AppleHealthKitAPI\HealthKitData\bin\Debug\HealthKitData.pdb
-C:\Users\ckrobotham\Documents\goodwatchhunting\AppleHealthKitAPI\HealthKitData\obj\Debug\HealthKitData.csprojResolveAssemblyReference.cache
 C:\Users\ckrobotham\Documents\goodwatchhunting\AppleHealthKitAPI\HealthKitData\obj\Debug\HealthKitData.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\AppleHealthKitAPI\HealthKitData\obj\Debug\HealthKitData.pdb
