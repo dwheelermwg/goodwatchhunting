@@ -3,11 +3,11 @@ C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHun
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\GoodWatchHunting.Domain.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\GoodWatchHunting.Repositories.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\HealthKitData.dll
+C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\HealthKitData.pdb
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\GoodWatchHunting.Domain.pdb
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\GoodWatchHunting.Repositories.pdb
+C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.csprojResolveAssemblyReference.cache
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\obj\Debug\GoodWatchHunting.Services.pdb
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Services\bin\Debug\Newtonsoft.Json.xml

@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace GoodWatchHunting.Services
 {
-  public class UserEventService
+  public class UserEventService : IUserEventService
   {
     public IEnumerable<UserEvent> GetAllEventsForUser(string userId)
     {

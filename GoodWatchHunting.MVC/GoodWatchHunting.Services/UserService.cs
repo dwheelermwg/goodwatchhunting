@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace GoodWatchHunting.Services
 {
-  public class UserService
+  public class UserService : IUserService
   {
     public IEnumerable<User> GetAllUsers()
     {
