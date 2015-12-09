@@ -25,6 +25,6 @@
     /// <summary>
     /// Gets or sets the goal.
     /// </summary>
-    public int Goal { get; set; }
+    public string Goal { get; set; }
   }
 }
