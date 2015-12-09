@@ -1,0 +1,1073 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebGrocer.Internationalization</name>
+    </assembly>
+    <members>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition">
+            <summary>Represents metadata about the configuration for a country's address format.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.ShowLine3">
+            <summary>Gets a value indicating if the UI should show or hide a <c>Line3</c> field for an address.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.ShowRegion">
+            <summary>Gets a value indicating if the UI should show or hide a <c>Region</c> field for an address.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.Line3Required">
+            <summary>Gets a value indicating if the <c>Line3</c> field for an address is required or not for the country.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.RegionRequired">
+            <summary>Gets a value indicating if the <c>Region</c> field for an address is required or not for the country.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.PostalCodeRequired">
+            <summary>Gets a value indicating if the <c>Postal Code</c> field for an address is required or not for the country.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.CountryCode">
+            <summary>The country code to which the definition applies.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.AddressDefinition.PostalCodeRegex">
+            <summary>A regular expression that can be used to validate the postal code for the country.</summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.AddressDefinitions">
+            <summary>Represents the collection of address definitions for each defined country.</summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.IAddressDefinitions">
+            <summary>Interface which defines how to get how address data is defined
+            per country.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.IAddressDefinitions.GetAddressDefinitions">
+            <summary>Gets all address country definitions defined.</summary>
+            <returns>An <see cref="T:System.Collections.Generic.IList`1"/> of <see cref="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition"/>.</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.IAddressDefinitions.GetAddressDefinition(System.String)">
+            <summary>Gets the address definitions for a specified country.</summary>
+            <returns>An <see cref="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition"/>.</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.AddressDefinitions.GetAddressDefinitions">
+            <summary>
+            Get all address definitions for the configured countries
+            </summary>
+            <returns>A list of all configured <see cref="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition"/>s</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.AddressDefinitions.GetAddressDefinition(System.String)">
+            <summary>
+            Get the address definition for a specific country
+            </summary>
+            <param name="countryCode">The ISO country code</param>
+            <returns>A <see cref="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition"/> for the country</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationCollection">
+            <summary>
+            Collection of phone formats
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationCollection.GetElementKey(MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationElement">
+            <summary>
+            Represents a configuration element that associates a list of phone prefixes to a country 
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationElement.CountryCode">
+            <summary>
+            Country code corresponding to this collection of prefixes
+            </summary>    
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.CountryPrefixesConfigurationElement.PhonePrefixesConfigurationCollection">
+            <summary>
+            Collection of phone number formats
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationCollection">
+            <summary>
+            Collection of phone formats
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationCollection.GetElementKey(MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationElement">
+            <summary>
+             Configuration for a postal code cleaning expression
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationElement.Expression">
+            <summary>
+            Format expression, pipe delimitated, first part is expression, second part is replacement
+            </summary>
+            <example>(\d{3})(\d{4})|$1-$2</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PostalCodeCleansingConfigurationElement.CountryCode">
+            <summary>
+            The numeric length that this expression applies to
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationCollection">
+            <summary>
+            Collection of phone formats
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationCollection.GetElementKey(MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement">
+            <summary>
+            Configuration for the calling code for an individual country.
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement.CountryCode">
+            <summary>
+            Three letter country ISO code, e.g. NZL
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement.CallingCode">
+            <summary>
+            Numeric calling code, e.g. 64
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement.PhoneFormatKey">
+            <summary>
+            Reference to the default <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement"/> to use for this country. 
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection">
+            <summary>
+            Collection of phone calling codes.
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection.CreateNewElement">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection.Add(MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement)">
+            <summary>
+            Add a new <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement"/>
+            </summary>
+            <param name="phoneCallingCodeElement">The element to add</param>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection.Item(System.Int32)">
+            <summary>
+            Access the <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement"/> element
+            </summary>
+            <param name="index">Key to the element</param>
+            <returns>The <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement"/> element for this key</returns>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationCollection.Item(System.String)">
+            <summary>
+            Access the <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement"/> element
+            </summary>
+            <param name="key">Key to the element</param>
+            <returns>The <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneCallingCodeConfigurationElement"/> element for this key</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection">
+            <summary>
+            Collection of phone formats
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.CreateNewElement">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.Add(MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement)">
+            <summary>
+            Add an element to the collection
+            </summary>
+            <param name="phoneFormatElement"></param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.GetElementByLength(System.Int32)">
+            <summary>
+            Returns the first element in the collection for which the Length value matches the given value, or null if no such element was found
+            </summary>
+            <param name="length">Value to search by</param>
+            <returns>The first element that matches the given length</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.GetElementByKey(System.Int32)">
+            <summary>
+            Returns the element with the given key
+            </summary>
+            <param name="key">Key to search by</param>
+            <returns>The element with the given key</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationCollection.GetEnumerator">
+            <summary>
+            Get an enumerator for the collection
+            </summary>
+            /// <returns>Enumerator of <see cref="T:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement"/></returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement">
+            <summary>
+            Configuration for an individual phone format
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement.Expression">
+            <summary>
+            Format expression, pipe deliminated, first part is expression, second part is replacement
+            </summary>
+            <example>(\d{3})(\d{4})|$1-$2</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement.MinLength">
+            <summary>
+            The minimum numeric length that this expression applies to
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement.MaxLength">
+            <summary>
+            The minimum numeric length that this expression applies to
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhoneFormatConfigurationElement.Key">
+            <summary>
+            Key that identifies this format. Should be grather than 0. Key = 0 identifies the default format.
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement">
+            <summary>
+            Represents a configuration element for a phone prefix
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement.DomesticPrefix">
+            <summary>
+            Phone prefix, not including the country prefix
+            </summary>    
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement.InternationalPrefix">
+            <summary>
+            Phone prefix, including the country prefix
+            </summary>    
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement.IsMobile">
+            <summary>
+            Id corresponding to the phone format used for a specific phone prefix or
+            a group of phone prefixes
+            </summary>    
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement.FormatId">
+            <summary>
+            Id corresponding to the phone format used for a specific phone prefix or
+            a group of phone prefixes
+            </summary>    
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PhonePrefixesConfigurationCollection">
+            <summary>
+            Collection of phone prefixes.
+            </summary>  
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Configuration.PhonePrefixesConfigurationCollection.GetElementKey(MyWebGrocer.Internationalization.Configuration.PhonePrefixConfigurationElement)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationElement">
+            <summary>
+             Configuration for an individual named postal code format
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationElement.Expression">
+            <summary>
+            Format expression, pipe delimitated, first part is expression, second part is replacement
+            </summary>
+            <example>(\d{3})(\d{4})|$1-$2</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationElement.Length">
+            <summary>
+            The numeric length that this expression applies to
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Configuration.PostalCodeFormatConfigurationElement.CountryCode">
+            <summary>
+            The numeric length that this expression applies to
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Countries">
+            <summary>
+            A class granting access to a list of countries.
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Countries.GetBy(System.String)">
+            <summary>
+            Retrieve the ReginInfo for a country
+            </summary>
+            <param name="countryCode">This value can be a two or three letter ISO code or the name of the country.</param>
+            <returns>The <see cref="T:System.Globalization.RegionInfo"/> for the specified country.</returns>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Countries.All">
+            <summary>
+            Returns a RegionInfo for all countries.
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Countries.AllLocalized">
+            <summary>
+            Returns the localized names for all countries
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Countries.AllEnglish">
+            <summary>
+            Returns the English names for all countries
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.CultureHelper">
+            <summary>
+            Wraps interaction with supported and selected client Culture's
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.ICultureHelper">
+            <summary>
+            Wraps interaction with supported and selected client Culture's
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.ICultureHelper.AvailableCultures(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            List of available cultures
+            </summary>
+            <param name="storeId">Store identifier</param>
+            <param name="storeGroupId">Store group identifier</param>
+            <returns>List of available cultures for the store or store group</returns>
+            <remarks>This method must be invoked as part of the IOC wireup, pulling storeGroupId and storeId from the current context (configuration or possibly session)</remarks>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.ICultureHelper.ChangeCulture(System.String)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="name">Name of the Culture to set</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.ICultureHelper.ChangeCulture(System.Int32)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="cultureId">LCID of the Culture to set</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.ICultureHelper.ChangeCulture(System.Globalization.CultureInfo)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="currentCulture">Culture to set</param>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.ICultureHelper.Current">
+            <summary>
+            Current selected culture
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.ICultureHelper.Invariant">
+            <summary>
+            Invariant culture
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.ICultureHelper.CurrentCountry">
+            <summary>
+            Region info for the current selected culture
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CultureHelper.#ctor(MyWebGrocer.Internationalization.InternationalizationSection)">
+            <summary>
+            Constructs a new instance, sets Thread culture using default culture from <paramref name="internationalizationSection"/>
+            </summary>
+            <param name="internationalizationSection">Internationalization configuration section values</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CultureHelper.AvailableCultures(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            List of available cultures
+            </summary>
+            <param name="storeId">Store identifier</param>
+            <param name="storeGroupId">Store group identifier</param>
+            <returns>List of available cultures for the store or store group</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CultureHelper.ChangeCulture(System.String)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="name">Name of the Culture to set</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CultureHelper.ChangeCulture(System.Int32)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="cultureId">LCID of the Culture to set</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CultureHelper.ChangeCulture(System.Globalization.CultureInfo)">
+            <summary>
+            Change the Thread.CurrentCulture and Thread.CurrentCultureUI
+            </summary>
+            <param name="currentCulture">Culture to set</param>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.CultureHelper.Current">
+            <summary>
+            Current selected culture
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.CultureHelper.MyWebGrocer#Internationalization#ICultureHelper#Invariant">
+            <summary>
+            Invariant culture
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.CultureHelper.CurrentCountry">
+            <summary>
+            Region info (country) for the current selected culture
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute">
+            <summary>
+            Base class for validators which require a property based on the country code stored on the 
+            class which contains the property.
+            </summary>
+            <remarks>
+            Note: We don't inherit from RequiredAttribute as some elements of the MVC
+            framework specifically look for it and choose not to add a RequiredValidator
+            for non-nullable fields if one is found. This would be invalid if we inherited
+            from it as obviously our RequiredIf only applies if a condition is satisfied.
+            Therefore we're using a private instance of one just so we can reuse the IsValid
+            logic, and don't need to rewrite it.
+            </remarks>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute">
+            <summary>Base class for attributes which validate a property against a country-specific
+            validation rule (such as required for NZL, but not USA, or certain postal code formats via regular expressions).
+            This class handles looking up the country code from the model and finding the appropriate rules for that country.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute"/>, which will
+            use the specified model's property to determine the current country being entered.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute.DoValidation(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <summary>Defines the actual validation behavior that occurs</summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The validation context.</param>
+            <param name="addressDefinition">The address definition to use when performing the validation.</param>
+            <returns>A <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"/> containing the result of the validation.</returns>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.DataAnnotations.CountrySpecificAddressValidationAttribute.CountryCodePropertyName">
+            <summary>
+            Property name for the country code
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute"/>, which will
+            use the specified model's property to determine the current country being entered.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute.DoValidation(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.AddressRequiredIfAttribute.IsRequired(MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <summary>Overridden in derived classes to look at a specific configuration option
+            in the <see cref="T:MyWebGrocer.Internationalization.Configuration.AddressDefinition"/></summary>
+            <param name="addressDefinition">The address definition of the relevant country.</param>
+            <returns><c>true</c> if a value is required for the property, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute">
+            <summary>When applied to a property containing postal code address data, requires
+            the line or not based on the model's current country code.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered and
+            will require a value for PostalCode based on the country.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute"/>, which will
+            use the specified model's property to determine the current country being entered and
+            will require a value for PostalCode based on the country.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.PostalCodeRequiredAttribute.IsRequired(MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute">
+            <summary>
+            Attribute to be applied to a Region property that is conditionally required based on the
+            model's value for the given country code property.
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered and
+            will require a value for Region based on the country.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute"/>, which will
+            use the specified model's property to determine the current country being entered and
+            will require a value for Region based on the country.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.RegionRequiredAttribute.IsRequired(MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute">
+            <summary>When applied to a property containing Line3 of address data, requires
+            the line or not based on the model's current country code.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered and
+            will require a value for Line3 based on the country.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute"/>, which will
+            use the specified model's property to determine the current country being entered and
+            will require a value for Line3 based on the country.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.Line3RequiredAttribute.IsRequired(MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute">
+            <summary>Validates a postal code against a country specific regular expression.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute.#ctor">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute"/>, which will
+            use the model's <c>CountryCode</c> property to determine the current country being entered.</summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance of <see cref="T:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute"/>, which will
+            use the specified model's property to determine the current country being entered.</summary>
+            <param name="countryCodePropertyName">The name of the property on the model to use to determine
+            which country is being edited.</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DataAnnotations.ValidPostalCodeAttribute.DoValidation(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,MyWebGrocer.Internationalization.Configuration.AddressDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.InternationalizationRegistry">
+            <summary>
+            IOC registry for internationalization
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.InternationalizationRegistry.#ctor">
+            <summary>
+            Constructs a new instance of the registry, pulling the MyWebGrocer.Internationalization section from the config file, or using the defaults
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.InternationalizationSection">
+            <summary>
+            Internationalization configuration settings, default culture, timezone, and date/time format overrides for the default culture
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.InternationalizationSection.#ctor">
+            <summary>
+            Constructs a new instance, sets default culture and timezone to "en-US" and "Eastern Standard Time"
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.SectionName">
+            <inheritdoc />
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.DefaultCulture">
+            <summary>
+            Default application culture
+            </summary>
+            <example>defaultCulture="en-US"</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.TimeZoneId">
+            <summary>
+            Default application time zone (.NET time zone identifier)
+            </summary>
+            <example>timeZoneId="Eastern Standard Time"</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.ShortDateFormat">
+            <summary>
+            Short Date format to use for the default culture
+            </summary>
+            <example>DateTime.Now.ToShortDate()</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.LongDateFormat">
+            <summary>
+            Short Date format to use for the default culture
+            </summary>
+            <example>DateTime.Now.ToLongDate()</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.ShortTimeFormat">
+            <summary>
+            Short Time format to use for the default culture
+            </summary>
+            <example>DateTime.Now.ToShortTime()</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.LongTimeFormat">
+            <summary>
+            Long time format to use for the default culture
+            </summary>
+            <example>DateTime.Now.ToLongTime()</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.FullDateTimeFormat">
+            <summary>
+            Full Date/Time long format to use for the default culture
+            </summary>
+            <example>DateTime.Now.ToString("F")</example>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.ConnectionName">
+            <summary>
+            DB connection name where timezone and cultures settings are stored
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.PhoneFormatConfigurationCollection">
+            <summary>
+            Collection of phone number formats. The format with key = 0 is considered the default format
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.PhoneCallingCodeConfigurationCollection">
+            <summary>
+            Collection of phone calling codes to override/augment the default settings in RegionInfoExtensions
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.CountryPrefixesConfigurationCollection">
+            <summary>
+            Collection of phone prefixes, grouped by country codes
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.PostalCodeFormatConfigurationCollection">
+            <summary>
+            Collection of postal codes formats
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.InternationalizationSection.PostalCodeCleansingConfigurationCollection">
+            <summary>
+            Collection of postal codes formats
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.CountryExtensions">
+            <summary>
+            Class for country extensions
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CountryExtensions.GetPhoneCallingCode(System.Globalization.RegionInfo)">
+            <summary>
+            Gets a country's phone calling code
+            </summary>
+            <param name="country">RegionInfo representing a country</param>
+            <returns>country's phone calling code</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CountryExtensions.GetPhoneTrunkPrefix(System.Globalization.RegionInfo)">
+            <summary>
+            Gets the prefix required when making a domestic long distance call within the country.
+            This prefix must be dropped when calling in from a different country.
+            </summary>
+            <param name="country">Country</param>
+            <returns>Trunk prefix</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.CountryExtensions.GetPhoneInternationalPrefix(System.Globalization.RegionInfo)">
+            <summary>
+            Gets the prefix that must be dialed to make an international call out of a country.
+            This prefix is followed by the calling code of the country being dialed.
+            </summary>
+            <param name="country">Country calling from</param>
+            <returns>International prefix</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.IPhoneHelper">
+            <summary>
+            Phone number helper library
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.FormatAsPhone(System.String)">
+            <summary>
+            Perform phone number formatting
+            </summary>
+            <param name="value">Number to format as a phone</param>
+            <returns>Formatted phone number, or original number if no matching formatter found (match occurs by length of numeric characters)</returns>
+            <remarks>Use this method or <see cref="T:MyWebGrocer.Internationalization.PhoneFormatExtensions"/></remarks>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.GetCallingCode(System.Globalization.RegionInfo)">
+            <summary>
+            Get phone calling code for a specified country.
+            </summary>
+            <param name="country">RegionInfo representing country</param>
+            <returns>Phone calling code</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.BuildInternationalNumber(System.String,System.Globalization.RegionInfo)">
+            <summary>
+            Returns a phone number, prefixed with international code
+            </summary>
+            <param name="rawPhoneNumber">Raw phone number that will be converted to international phone number.</param>
+            <param name="recipientsCountryInfo">Raw phone number that will be converted to international phone number.</param>
+            <returns>The raw phone number prefixed with the country international code.</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.FormatAsPhone(System.Int32,System.String)">
+            <summary>
+            Formats the given value using the phone format expression with the given key
+            </summary>
+            <param name="formatKey">Key of the phone format element to use</param>
+            <param name="value">Value to format as phone</param>
+            <returns>The value formatted using the specified PhoneFormat key</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.GetPrefixes(System.String)">
+            <summary>
+            Gets the prefixes from the specified country.
+            </summary>
+            <param name="countryCode">The country code.</param>
+            <returns>A list of number prefixes from the specified country</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.GetPhoneFormatDetails(System.String,System.String)">
+            <summary>
+            Gets the phone format details.
+            </summary>
+            <param name="countryCode">The country code.</param>
+            <param name="prefix">The prefix.</param>
+            <returns>Details for phone format : min/max lengths, string format</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPhoneHelper.ParsePhoneNumber(System.String,System.String)">
+            <summary>
+            Gets the phone number.
+            </summary>
+            <param name="countryCode">The country code.</param>
+            <param name="number">The unformatted number, including the prefix.</param>
+            <returns>The phone number, separated by prefix and the actual number</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.IPostalCodeHelper">
+            <summary>
+            Postal Code helper library
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPostalCodeHelper.FormatAsPostalCode(System.String,System.String)">
+            <summary>
+            Perform postal code formatting
+            </summary>
+            <param name="value">String to format as a Postal Code</param>
+            <param name="countryCode">Optional parameter country code</param>
+            <returns>Formatted postal code, or original string if no matching formatter found</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IPostalCodeHelper.CleanPostalCode(System.String,System.String)">
+            <summary>
+            Removes all the special characters from the postal code string.
+            </summary>
+            <param name="value">The string to cleanup</param>
+            <param name="countryCode">Optional parameter country code</param>
+            <returns>The clean postal code containing only the following allowed characters: A-Z (uppercase or lowercase), numbers (0-9) </returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PhoneFormatDetails">
+            <summary>
+            Details about phone number formatting
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneFormatDetails.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:MyWebGrocer.Internationalization.PhoneFormatDetails"/> class
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneFormatDetails.MinLength">
+            <summary>
+            Minimum length of the phone number
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneFormatDetails.MaxLength">
+            <summary>
+            Maximum length of the phone number
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneFormatDetails.Format">
+            <summary>
+            The regular expression that will be used to format the phone number for display 
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PhoneFormatExtensions">
+            <summary>
+            Phone number formatting extension methods
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneFormatExtensions.ToPhoneNumber(System.String)">
+            <summary>
+            Format a phone number using the MyWebGrocer.Internationalization/PhoneFormats configuration
+            </summary>
+            <param name="value">Number to format as a phone</param>
+            <returns>Formatted phone number, or original number if no matching formatter found (match occurs by length of numeric characters)</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneFormatExtensions.ToInternationalPhoneNumber(System.String,System.Globalization.RegionInfo)">
+            <summary>
+            Returns a phone number, prefixed with international code
+            </summary>
+            <param name="rawPhoneNumber">Raw phone number that will be converted to international phone number.</param>
+            <param name="recipientsCountryInfo">Raw phone number that will be converted to international phone number.</param>
+            <returns>The raw phone number prefixed with the country international code.</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PhoneHelper">
+            <summary>
+            Phone number helper library
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.#ctor(MyWebGrocer.Internationalization.InternationalizationSection)">
+            <summary>
+            Phone number format constructor, to be invoked via IOC
+            </summary>
+            <param name="internationalizationSection">Internationalization Configuration Section, containing phone number formats</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.FormatAsPhone(System.String)">
+            <summary>
+            Perform the actual formatting
+            </summary>
+            <param name="value">Number to format as a phone</param>
+            <returns>Formatted phone number, or original number if no matching formatter found (match occurs by length of numeric characters)</returns>
+            <remarks>Use this method or <see cref="T:MyWebGrocer.Internationalization.PhoneFormatExtensions"/></remarks>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.GetCallingCode(System.Globalization.RegionInfo)">
+            <summary>
+            Get country calling code.
+            </summary>
+            <param name="country">RegionInfo object representing the country</param>
+            <returns>Phone calling code for the country</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.BuildInternationalNumber(System.String,System.Globalization.RegionInfo)">
+            <summary>
+            Returns a phone number, prefixed with international code
+            </summary>
+            <param name="rawPhoneNumber">Raw phone number that will be converted to international phone number.</param>
+            <param name="recipientsCountryInfo">Raw phone number that will be converted to international phone number.</param>
+            <returns>The raw phone number prefixed with the country international code.</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.FormatAsPhone(System.Int32,System.String)">
+            <summary>
+            Formats the given value using the phone format expression with the given key
+            </summary>
+            <param name="formatKey">Key of the phone format element to use</param>
+            <param name="value">Value to format as phone</param>
+            <returns>The value formatted using the specified PhoneFormat key</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.GetPrefixes(System.String)">
+            <summary>
+            Get the list of <see cref="T:MyWebGrocer.Internationalization.PhoneNumberPrefix"/> for a given country code
+            </summary>
+            <param name="countryCode">The country code for which to retrieve the prefix list</param>
+            <returns>The list of <see cref="T:MyWebGrocer.Internationalization.PhoneNumberPrefix"/> for the given country</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.GetPhoneFormatDetails(System.String,System.String)">
+            <summary>
+            Returns the formatting details from the configuration section for the given countryCode and prefix. 
+            If either parameter is empty, the configuration with Key = 0 is returned
+            </summary>
+            <param name="countryCode"></param>
+            <param name="prefix"></param>
+            <returns>Corresponding <see cref="T:MyWebGrocer.Internationalization.PhoneFormatDetails"/> object</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneHelper.ParsePhoneNumber(System.String,System.String)">
+            <summary>
+            Parse a phone number for a specific country using CountryPrefixes configuration section
+            </summary>
+            <param name="countryCode">The country code used to determine the formatting</param>
+            <param name="number">The phone number to parse</param>
+            <returns>The corresponding <see cref="T:MyWebGrocer.Internationalization.PhoneNumber"/> object</returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PhoneNumber">
+            <summary>
+            Represents a phone number
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneNumber.#ctor">
+            <summary>
+            Creates a new insance of <see cref="T:MyWebGrocer.Internationalization.PhoneNumber"/>
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneNumber.#ctor(System.String)">
+            <summary>
+            Creates a new insance of <see cref="T:MyWebGrocer.Internationalization.PhoneNumber"/> from a string representation
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneNumber.Prefix">
+            <summary>
+            The prefix part of the phone number
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneNumber.Number">
+            <summary>
+            Represents the number without any prefix
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneNumber.FullNumber">
+            <summary>
+            Full number, containing prefix
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PhoneNumberPrefix">
+            <summary>
+            Represents a phone number prefix
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PhoneNumberPrefix.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:MyWebGrocer.Internationalization.PhoneNumberPrefix"/> class
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneNumberPrefix.DomesticPrefix">
+            <summary>
+            Area prefix
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PhoneNumberPrefix.IsMobile">
+            <summary>
+            Indicates whether the prefix is associated to a mobile phone number
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PostalCodeDefinition">
+            <summary>
+            The postal code format definition
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PostalCodeDefinition.Length">
+            <summary>
+            Length of the postal code, serves as key for the element
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PostalCodeDefinition.CountryCode">
+            <summary>
+            Country code for which the postal code format applies
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.PostalCodeDefinition.Expression">
+            <summary>
+            RegEx used to validate that the postal code is correct
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PostalCodeFormatExtensions">
+            <summary>
+            Postal Code formatting extension methods
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PostalCodeFormatExtensions.ToPostalCode(System.String,System.String)">
+            <summary>
+            Format a postal code using the MyWebGrocer.Internationalization/PostalCodeFormats configuration
+            </summary>
+            <param name="value">Value to format as a postal code</param>
+            <param name="countryCode">optional the country code </param>
+            <returns>Formatted postal code, or original value if no matching formatter found</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PostalCodeFormatExtensions.CleanPostalCode(System.String,System.String)">
+            <summary>
+            Removes all the special characters from the postal code string.
+            </summary>
+            <param name="value">The string to cleanup</param>
+            <param name="countryCode">optional the country code </param>
+            <returns>The clean postal code containing only the following allowed characters: A-Z (uppercase or lowercase), numbers (0-9) </returns>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.PostalCodeHelper">
+            <summary>
+            Postal Code helper library
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PostalCodeHelper.#ctor(MyWebGrocer.Internationalization.InternationalizationSection)">
+            <summary>
+            Postal Code format constructor, to be invoked via IOC
+            </summary>
+            <param name="internationalizationSection">Internationalization Configuration Section, containing phone number formats</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PostalCodeHelper.FormatAsPostalCode(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.PostalCodeHelper.CleanPostalCode(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.DateTimeHelper">
+            <summary>
+            Wraps interaction with client time 
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.IDateTimeHelper">
+            <summary>
+            Wraps interaction with client time 
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.IDateTimeHelper.AssignLocalTimeZone(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Set local time zone by store group identifier
+            </summary>
+            <param name="storeGroupId">Store group identifier to use</param>
+            <param name="storeId">Store identifier to use</param>
+            <remarks>This method must be invoked as part of the IOC wireup, pulling storeGroupId and storeId from the current context (configuration or possibly session)</remarks>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.IDateTimeHelper.LocalTimeZoneId">
+            <summary>
+            Local client time zone (.NET time zone identifier)
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.IDateTimeHelper.CurrentLocal">
+            <summary>
+            Current local client time (for the specified time zone)
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.IDateTimeHelper.CurrentUtc">
+            <summary>
+            Current UTC time
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DateTimeHelper.#ctor(MyWebGrocer.Internationalization.InternationalizationSection,MyWebGrocer.IClock)">
+            <summary>
+            Constructs a new instance, setting the default TimeZoneId from <paramref name="internationalizationSection"/>
+            </summary>
+            <param name="internationalizationSection">Internationalization configuration section values</param>
+            <param name="clock">An instance of <see cref="T:MyWebGrocer.IClock"/> which wraps DateTime functionality</param>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.DateTimeHelper.AssignLocalTimeZone(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Set local time zone by store group identifier
+            </summary>
+            <param name="storeGroupId">Store group identifier to use</param>
+            <param name="storeId">Store identifier to use</param>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.DateTimeHelper.LocalTimeZoneId">
+            <summary>
+            Local client time zone (.NET time zone identifier)
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.DateTimeHelper.CurrentLocal">
+            <summary>
+            Current local client time (for the specified time zone)
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.DateTimeHelper.CurrentUtc">
+            <summary>
+            Current UTC time
+            </summary>
+        </member>
+        <member name="T:MyWebGrocer.Internationalization.Region">
+            <summary>
+            Represents a state in the US and territories (including foreign bases)
+            </summary>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Region.FindRegion(System.String)">
+            <summary>
+            Tries to return a region given an ISO code
+            </summary>
+            <param name="isoCode">Region ISO code</param>
+            <returns>Region</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Region.Parse(System.String,System.String)">
+            <summary>
+            Tries to return a region given a country and isoCode
+            </summary>
+            <param name="countryCode">2 letter ISO country code</param>
+            <param name="isoCode">ISO code for the region</param>
+            <returns>Region</returns>
+        </member>
+        <member name="M:MyWebGrocer.Internationalization.Region.GetAllIn(System.String)">
+            <summary>
+            All regions in a country
+            </summary>
+            <param name="countryCode">An ISO-2 or ISO-3 country code</param>
+            <returns>List of regions</returns>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Region.Country">
+            <summary>
+            Country name
+            </summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Region.IsoCode">
+            <summary>The two digit ISO code for the region.</summary>
+        </member>
+        <member name="P:MyWebGrocer.Internationalization.Region.Name">
+            <summary>
+            Name of the region
+            </summary>
+        </member>
+    </members>
+</doc>
