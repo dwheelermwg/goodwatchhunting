@@ -5,3 +5,10 @@ C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHun
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.csprojResolveAssemblyReference.cache
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.dll
 C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.pdb
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\bin\Debug\GoodWatchHunting.Repositories.dll
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\bin\Debug\GoodWatchHunting.Repositories.pdb
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\bin\Debug\GoodWatchHunting.Domain.dll
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\bin\Debug\GoodWatchHunting.Domain.pdb
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.dll
+C:\Users\dburdzy\Documents\bobbypls2\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Repositories\obj\Debug\GoodWatchHunting.Repositories.pdb
