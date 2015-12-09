@@ -11,6 +11,8 @@
     <AssemblyName>GoodWatchHunting.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,9 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventService.cs" />
+    <Compile Include="IEventService.cs" />
+    <Compile Include="IUserEventService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserEventService.cs" />
+    <Compile Include="UserService.cs" />
+    <Compile Include="WebService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AppleHealthKitAPI\HealthKitData\HealthKitData.csproj">
+      <Project>{51d41c93-d94c-4ade-a8ea-3e0e1aacf629}</Project>
+      <Name>HealthKitData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GoodWatchHunting.Domain\GoodWatchHunting.Domain.csproj">
       <Project>{8776d828-2961-4d92-b169-cfd6ca463eab}</Project>
       <Name>GoodWatchHunting.Domain</Name>
@@ -51,7 +68,11 @@
       <Name>GoodWatchHunting.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\Events.cs" />
+    <Compile Include="Collections\Event.cs" />
     <Compile Include="Collections\EventType.cs" />
     <Compile Include="Collections\HealthRecords.cs" />
     <Compile Include="Collections\User.cs" />
