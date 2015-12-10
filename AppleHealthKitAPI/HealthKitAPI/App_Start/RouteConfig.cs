@@ -22,6 +22,11 @@ namespace HealthKitAPI
         defaults: new { controller = "HealthKit", action = "AllEvents" });
 
       routes.MapRoute(
+        name: RoutesNames.UserById,
+        url: RoutesTemplates.GetUserById,
+        defaults: new { controller = "HealthKit", action = "GetUserById" });
+
+      routes.MapRoute(
         name: RoutesNames.EventById,
         url: RoutesTemplates.GetEventById,
         defaults: new { controller = "HealthKit", action = "GetEventById" });

@@ -80,6 +80,41 @@ namespace HealthKitAPI.Controllers
     }
 
     [System.Web.Http.HttpGet]
+    public async Task<JsonResult> GetUserById(string id)
+    {
+      client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
+      database = client.GetDatabase("GoodWatchHunting");
+      var tempUser = new User();
+
+      var eventCollection = database.GetCollection<BsonDocument>("User");
+      var filter = Builders<BsonDocument>.Filter.Eq("UserGuid", id);
+
+      using (var cursor = await eventCollection.FindAsync(filter))
+      {
+        while (await cursor.MoveNextAsync())
+        {
+          var batch = cursor.Current;
+          foreach (var document in batch)
+          {
+            tempUser.ApplicationGuid = document["ApplicationGuid"].AsString;
+            tempUser.UserGuid = document["UserGuid"].AsString;
+            tempUser.FirstName = document["FirstName"].AsString;
+            tempUser.LastName = document["LastName"].AsString;
+            tempUser.LastLogin = Convert.ToDateTime(document["LastLogin"].AsString);
+            tempUser.Experience = Convert.ToInt32(document["Experience"].AsString);
+            tempUser.Level = Convert.ToInt32(document["Level"].AsString);
+            tempUser.Age = Convert.ToInt32(document["Age"].AsString);
+            tempUser.Inches = Convert.ToInt32(document["Inches"].AsString);
+            tempUser.Feet = Convert.ToInt32(document["Feet"].AsString);
+            tempUser.StepCount = Convert.ToInt32(document["StepCount"].AsString);
+          }
+        }
+      }
+
+      return Json(tempUser, JsonRequestBehavior.AllowGet);
+    }
+
+    [System.Web.Http.HttpGet]
     public async Task<JsonResult> GetEventByUserId(string userId)
     {
       client = new MongoClient(WebConfigurationManager.AppSettings["MongoDB"]);
