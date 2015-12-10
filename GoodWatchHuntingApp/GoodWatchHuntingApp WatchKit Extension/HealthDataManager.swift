@@ -1,47 +1,33 @@
 //
-//  InterfaceController.swift
-//  GoodWatchHuntingApp WatchKit Extension
+//  HealthDataManager.swift
+//  GoodWatchHuntingApp
 //
-//  Created by Derek Wheeler on 12/9/15.
+//  Created by Derek Wheeler on 12/10/15.
 //  Copyright © 2015 MyWebGrocer. All rights reserved.
 //
 
-import WatchKit
 import Foundation
 import HealthKit
+import WatchKit
 
-
-class InterfaceController: WKInterfaceController {
-
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+class HealthDataManager {
+    func startHealthTracker() {
         
-        // Configure interface objects here.
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
-        guard self.heartRateQuery == nil else { return }
-
-            // start
-        self.heartRateQuery = self.createStreamingQuery()
-        self.healthStore.executeQuery(self.heartRateQuery!)
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
     
-    // =========================================================================
+    func stopHealthTracker() {
+        
+    }
+    
+    func retrieveHealthData() -> HealthSnapshot? {
+        return nil
+    }
     // MARK: - Private
     let heartRateType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
     let heartRateUnit = HKUnit(fromString: "count/min")
     var heartRateQuery: HKQuery?
     let healthStore = HKHealthStore()
-
+    
     private func createStreamingHeartRateQuery() -> HKQuery {
         let predicate = HKQuery.predicateForSamplesWithStartDate(NSDate(), endDate: nil, options: .None)
         
@@ -60,5 +46,4 @@ class InterfaceController: WKInterfaceController {
         guard let quantity = samples.last?.quantity else { return }
         print("Heart rate = \(quantity.doubleValueForUnit(heartRateUnit))")
     }
-
 }

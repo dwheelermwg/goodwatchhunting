@@ -8,6 +8,7 @@
 
 import Foundation
 import HealthKit
+import SwiftyJSON
 
 public class HealthManager {
     let healthKitStore = HKHealthStore()
@@ -18,6 +19,8 @@ public class HealthManager {
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierRespiratoryRate)!,
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
         ])
+        
+
         
         if HKHealthStore.isHealthDataAvailable() {
             healthKitStore.requestAuthorizationToShareTypes(nil, readTypes: healthKitReadTypes, completion: { (success, error) -> Void in
