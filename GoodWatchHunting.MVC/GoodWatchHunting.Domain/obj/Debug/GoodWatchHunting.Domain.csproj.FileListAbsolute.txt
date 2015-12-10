@@ -1,4 +1,0 @@
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\bin\Debug\GoodWatchHunting.Domain.dll
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\bin\Debug\GoodWatchHunting.Domain.pdb
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\obj\Debug\GoodWatchHunting.Domain.dll
-C:\Users\ckrobotham\Documents\goodwatchhunting\GoodWatchHunting.MVC\GoodWatchHunting.Domain\obj\Debug\GoodWatchHunting.Domain.pdb
