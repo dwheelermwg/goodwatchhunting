@@ -11,6 +11,7 @@ import WatchKit
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
+        print("Watch extension has started.")
         // Perform any final initialization of your application.
     }
 

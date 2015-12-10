@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0094F2E61C18C0ED00FF9646 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094F2E51C18C0ED00FF9646 /* HealthManager.swift */; };
+		0094F2E91C18E0A300FF9646 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0094F2E81C18E0A300FF9646 /* HealthKit.framework */; };
 		00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */; };
 		00EC40EE1C18A82200CC43F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC40ED1C18A82200CC43F4 /* ViewController.swift */; };
 		00EC40F11C18A82200CC43F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC40EF1C18A82200CC43F4 /* Main.storyboard */; };
@@ -83,6 +85,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0094F2E51C18C0ED00FF9646 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		0094F2E71C18E0A300FF9646 /* GoodWatchHuntingApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GoodWatchHuntingApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		0094F2E81C18E0A300FF9646 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		0094F2EA1C18E0A800FF9646 /* GoodWatchHuntingApp WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GoodWatchHuntingApp WatchKit App.entitlements"; sourceTree = "<group>"; };
 		00EC40E81C18A82200CC43F4 /* GoodWatchHuntingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWatchHuntingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00EC40ED1C18A82200CC43F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,12 +148,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0094F2E91C18E0A300FF9646 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0094F2E41C18C0B600FF9646 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0094F2E51C18C0ED00FF9646 /* HealthManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		00EC40DF1C18A82100CC43F4 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +192,7 @@
 		00EC40EA1C18A82200CC43F4 /* GoodWatchHuntingApp */ = {
 			isa = PBXGroup;
 			children = (
+				0094F2E41C18C0B600FF9646 /* Managers */,
 				00EC41421C18B23E00CC43F4 /* GoodWatchHuntingApp.entitlements */,
 				00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */,
 				00EC40ED1C18A82200CC43F4 /* ViewController.swift */,
@@ -209,6 +225,7 @@
 		00EC41141C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				0094F2EA1C18E0A800FF9646 /* GoodWatchHuntingApp WatchKit App.entitlements */,
 				00EC41151C18A82200CC43F4 /* Interface.storyboard */,
 				00EC41181C18A82200CC43F4 /* Assets.xcassets */,
 				00EC411A1C18A82200CC43F4 /* Info.plist */,
@@ -219,6 +236,7 @@
 		00EC41231C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0094F2E71C18E0A300FF9646 /* GoodWatchHuntingApp WatchKit Extension.entitlements */,
 				00EC41261C18A82200CC43F4 /* InterfaceController.swift */,
 				00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */,
 				00EC412A1C18A82200CC43F4 /* NotificationController.swift */,
@@ -249,6 +267,7 @@
 		85A5F28013CB0B5A1E88CB2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0094F2E81C18E0A300FF9646 /* HealthKit.framework */,
 				00EC41431C18B23E00CC43F4 /* HealthKit.framework */,
 				CFC9CEFDF411CD8040160636 /* Pods.framework */,
 			);
@@ -379,9 +398,24 @@
 					};
 					00EC410F1C18A82200CC43F4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AEA8F3G8N8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					00EC411E1C18A82200CC43F4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AEA8F3G8N8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -505,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EC40EE1C18A82200CC43F4 /* ViewController.swift in Sources */,
+				0094F2E61C18C0ED00FF9646 /* HealthManager.swift in Sources */,
 				00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -663,7 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,10 +709,14 @@
 		00EC41321C18A82200CC43F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit Extension/GoodWatchHuntingApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -688,10 +727,14 @@
 		00EC41331C18A82200CC43F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit Extension/GoodWatchHuntingApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -703,11 +746,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit App/GoodWatchHuntingApp WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -719,11 +766,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit App/GoodWatchHuntingApp WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -735,7 +786,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -751,7 +801,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
