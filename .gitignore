@@ -5,4 +5,3 @@ AppleHealthKitAPI/packages/**
 AppleHealthKitAPI/**/bin
 AppleHealthKitAPI/**/obj
 !repositories.config
-GoodWatchHunting.MVC/GoodWatchHunting.MVC.sln

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.MVC", "GoodWatchHunting.MVC\GoodWatchHunting.MVC.csproj", "{73681DDB-C9A5-4A05-98C5-C312B506B654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.Domain", "GoodWatchHunting.Domain\GoodWatchHunting.Domain.csproj", "{8776D828-2961-4D92-B169-CFD6CA463EAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.Services", "GoodWatchHunting.Services\GoodWatchHunting.Services.csproj", "{9F7AABFE-07F3-4EBB-B132-31321CAEF644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodWatchHunting.Repositories", "GoodWatchHunting.Repositories\GoodWatchHunting.Repositories.csproj", "{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthKitData", "..\AppleHealthKitAPI\HealthKitData\HealthKitData.csproj", "{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E806CD90-E7DD-47F3-8F9D-9C988B32B063}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAdminTemplate", "MvcAdminTemplate\MvcAdminTemplate.csproj", "{56CB289E-B415-40E0-BAA7-B7C80782E1DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73681DDB-C9A5-4A05-98C5-C312B506B654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73681DDB-C9A5-4A05-98C5-C312B506B654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73681DDB-C9A5-4A05-98C5-C312B506B654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73681DDB-C9A5-4A05-98C5-C312B506B654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8776D828-2961-4D92-B169-CFD6CA463EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8776D828-2961-4D92-B169-CFD6CA463EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8776D828-2961-4D92-B169-CFD6CA463EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8776D828-2961-4D92-B169-CFD6CA463EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7AABFE-07F3-4EBB-B132-31321CAEF644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7AABFE-07F3-4EBB-B132-31321CAEF644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7AABFE-07F3-4EBB-B132-31321CAEF644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7AABFE-07F3-4EBB-B132-31321CAEF644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF807445-913C-4BDE-A7B9-D6E246A0FE9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D41C93-D94C-4ADE-A8EA-3E0E1AACF629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CB289E-B415-40E0-BAA7-B7C80782E1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CB289E-B415-40E0-BAA7-B7C80782E1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CB289E-B415-40E0-BAA7-B7C80782E1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CB289E-B415-40E0-BAA7-B7C80782E1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
