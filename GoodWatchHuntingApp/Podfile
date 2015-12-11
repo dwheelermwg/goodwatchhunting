@@ -13,6 +13,7 @@ target 'GoodWatchHuntingApp' do
 end
 
 target 'GoodWatchHuntingApp WatchKit Extension' do
+    platform :watchos, '2.0'
     shared_pods
 end
 

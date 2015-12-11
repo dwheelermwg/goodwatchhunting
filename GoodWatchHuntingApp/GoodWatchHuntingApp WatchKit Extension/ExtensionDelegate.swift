@@ -7,11 +7,29 @@
 //
 
 import WatchKit
+import HealthKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         print("Watch extension has started.")
+        
+        let healthStore = HKHealthStore()
+        guard HKHealthStore.isHealthDataAvailable() else {
+            return
+        }
+        
+        let dataTypes = Set([
+            HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
+            HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!
+        ])
+        healthStore.requestAuthorizationToShareTypes(nil, readTypes: dataTypes, completion: { (result, error) -> Void in
+            if result {
+                print("HealthKit authorization successful!")
+            } else {
+                print("HealthKit authorization failed!")
+            }
+        })
         // Perform any final initialization of your application.
     }
 

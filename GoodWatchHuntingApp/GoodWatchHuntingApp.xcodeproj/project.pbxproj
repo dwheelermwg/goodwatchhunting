@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008E90761C1A1BBF00F9BAD4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E90751C1A1BBF00F9BAD4 /* NetworkManager.swift */; };
+		008E90791C1A1FD400F9BAD4 /* HealthSurveryor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E90781C1A1FD400F9BAD4 /* HealthSurveryor.swift */; };
+		008E907E1C1A57FC00F9BAD4 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E907C1C1A57FC00F9BAD4 /* NetworkController.swift */; };
+		008E90861C1A723100F9BAD4 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E90851C1A723100F9BAD4 /* EventController.swift */; };
+		008E90881C1A816D00F9BAD4 /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E90871C1A816D00F9BAD4 /* HealthRecord.swift */; };
+		008E908A1C1A857900F9BAD4 /* UserEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E90891C1A857900F9BAD4 /* UserEvent.swift */; };
 		0094F2E61C18C0ED00FF9646 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094F2E51C18C0ED00FF9646 /* HealthManager.swift */; };
 		0094F2E91C18E0A300FF9646 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0094F2E81C18E0A300FF9646 /* HealthKit.framework */; };
 		00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */; };
@@ -25,6 +31,8 @@
 		00EC412B1C18A82200CC43F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC412A1C18A82200CC43F4 /* NotificationController.swift */; };
 		00EC412D1C18A82200CC43F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC412C1C18A82200CC43F4 /* Assets.xcassets */; };
 		00EC41441C18B23E00CC43F4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EC41431C18B23E00CC43F4 /* HealthKit.framework */; };
+		2510CDBDB3F0053F355302FB /* Pods_GoodWatchHuntingApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FC9F1D97289357D7238640 /* Pods_GoodWatchHuntingApp_WatchKit_Extension.framework */; };
+		296760484152D3E864BD254A /* Pods_GoodWatchHuntingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582DAC6C6C72D1958BF987D3 /* Pods_GoodWatchHuntingApp.framework */; };
 		E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9CEFDF411CD8040160636 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +93,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		008E90751C1A1BBF00F9BAD4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		008E90781C1A1FD400F9BAD4 /* HealthSurveryor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthSurveryor.swift; sourceTree = "<group>"; };
+		008E907C1C1A57FC00F9BAD4 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		008E90851C1A723100F9BAD4 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		008E90871C1A816D00F9BAD4 /* HealthRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthRecord.swift; sourceTree = "<group>"; };
+		008E90891C1A857900F9BAD4 /* UserEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEvent.swift; sourceTree = "<group>"; };
 		0094F2E51C18C0ED00FF9646 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		0094F2E71C18E0A300FF9646 /* GoodWatchHuntingApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GoodWatchHuntingApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		0094F2E81C18E0A300FF9646 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,9 +129,13 @@
 		00EC412E1C18A82200CC43F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00EC41421C18B23E00CC43F4 /* GoodWatchHuntingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GoodWatchHuntingApp.entitlements; sourceTree = "<group>"; };
 		00EC41431C18B23E00CC43F4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1DF3C207A1C4E39E13CC9368 /* Pods-GoodWatchHuntingApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWatchHuntingApp WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodWatchHuntingApp WatchKit Extension/Pods-GoodWatchHuntingApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		232AB25328626F44A7842B1F /* Pods-GoodWatchHuntingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWatchHuntingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodWatchHuntingApp/Pods-GoodWatchHuntingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFA27792C89E67223BD1250 /* Pods-GoodWatchHuntingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWatchHuntingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodWatchHuntingApp/Pods-GoodWatchHuntingApp.release.xcconfig"; sourceTree = "<group>"; };
+		582DAC6C6C72D1958BF987D3 /* Pods_GoodWatchHuntingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodWatchHuntingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FC9F1D97289357D7238640 /* Pods_GoodWatchHuntingApp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodWatchHuntingApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9CEFDF411CD8040160636 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D35E032621E922657930E7CD /* Pods-GoodWatchHuntingApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWatchHuntingApp WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodWatchHuntingApp WatchKit Extension/Pods-GoodWatchHuntingApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +145,7 @@
 			files = (
 				E8620AB568120FAC2640CB15 /* Pods.framework in Frameworks */,
 				00EC41441C18B23E00CC43F4 /* HealthKit.framework in Frameworks */,
+				296760484152D3E864BD254A /* Pods_GoodWatchHuntingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,18 +168,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				0094F2E91C18E0A300FF9646 /* HealthKit.framework in Frameworks */,
+				2510CDBDB3F0053F355302FB /* Pods_GoodWatchHuntingApp_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0094F2E41C18C0B600FF9646 /* Managers */ = {
+		008E906C1C1A192600F9BAD4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				008E90871C1A816D00F9BAD4 /* HealthRecord.swift */,
+				008E90891C1A857900F9BAD4 /* UserEvent.swift */,
+			);
+			name = models;
+			path = ../GoodWatchHuntingApp;
+			sourceTree = "<group>";
+		};
+		008E90771C1A1FC000F9BAD4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				008E90781C1A1FD400F9BAD4 /* HealthSurveryor.swift */,
+				008E907C1C1A57FC00F9BAD4 /* NetworkController.swift */,
+				008E90851C1A723100F9BAD4 /* EventController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		0094F2E41C18C0B600FF9646 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0094F2E51C18C0ED00FF9646 /* HealthManager.swift */,
+				008E90751C1A1BBF00F9BAD4 /* NetworkManager.swift */,
 			);
-			name = Managers;
+			name = controllers;
 			sourceTree = "<group>";
 		};
 		00EC40DF1C18A82100CC43F4 = {
@@ -192,7 +233,7 @@
 		00EC40EA1C18A82200CC43F4 /* GoodWatchHuntingApp */ = {
 			isa = PBXGroup;
 			children = (
-				0094F2E41C18C0B600FF9646 /* Managers */,
+				0094F2E41C18C0B600FF9646 /* controllers */,
 				00EC41421C18B23E00CC43F4 /* GoodWatchHuntingApp.entitlements */,
 				00EC40EB1C18A82200CC43F4 /* AppDelegate.swift */,
 				00EC40ED1C18A82200CC43F4 /* ViewController.swift */,
@@ -236,6 +277,8 @@
 		00EC41231C18A82200CC43F4 /* GoodWatchHuntingApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				008E906C1C1A192600F9BAD4 /* models */,
+				008E90771C1A1FC000F9BAD4 /* controllers */,
 				0094F2E71C18E0A300FF9646 /* GoodWatchHuntingApp WatchKit Extension.entitlements */,
 				00EC41261C18A82200CC43F4 /* InterfaceController.swift */,
 				00EC41281C18A82200CC43F4 /* ExtensionDelegate.swift */,
@@ -258,8 +301,10 @@
 		8267E80FAA389753AC194BC0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */,
-				EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */,
+				232AB25328626F44A7842B1F /* Pods-GoodWatchHuntingApp.debug.xcconfig */,
+				3DFA27792C89E67223BD1250 /* Pods-GoodWatchHuntingApp.release.xcconfig */,
+				D35E032621E922657930E7CD /* Pods-GoodWatchHuntingApp WatchKit Extension.debug.xcconfig */,
+				1DF3C207A1C4E39E13CC9368 /* Pods-GoodWatchHuntingApp WatchKit Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -270,6 +315,8 @@
 				0094F2E81C18E0A300FF9646 /* HealthKit.framework */,
 				00EC41431C18B23E00CC43F4 /* HealthKit.framework */,
 				CFC9CEFDF411CD8040160636 /* Pods.framework */,
+				582DAC6C6C72D1958BF987D3 /* Pods_GoodWatchHuntingApp.framework */,
+				A9FC9F1D97289357D7238640 /* Pods_GoodWatchHuntingApp_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -356,9 +403,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00EC41311C18A82200CC43F4 /* Build configuration list for PBXNativeTarget "GoodWatchHuntingApp WatchKit Extension" */;
 			buildPhases = (
+				332424B1F6864D762B107CB4 /* Check Pods Manifest.lock */,
 				00EC411B1C18A82200CC43F4 /* Sources */,
 				00EC411C1C18A82200CC43F4 /* Frameworks */,
 				00EC411D1C18A82200CC43F4 /* Resources */,
+				DDEA1AFA5FB73285F84A50B2 /* Embed Pods Frameworks */,
+				C9A944C7B00D009899F8137F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -486,6 +536,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		332424B1F6864D762B107CB4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		9C028E5A90A317B053180826 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,7 +563,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodWatchHuntingApp/Pods-GoodWatchHuntingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2E1FDB4B588B65B1D536A86 /* Copy Pods Resources */ = {
@@ -513,7 +578,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodWatchHuntingApp/Pods-GoodWatchHuntingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A944C7B00D009899F8137F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodWatchHuntingApp WatchKit Extension/Pods-GoodWatchHuntingApp WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEA1AFA5FB73285F84A50B2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodWatchHuntingApp WatchKit Extension/Pods-GoodWatchHuntingApp WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F56DEDC6D8DCBDBC5EEF0C9A /* Check Pods Manifest.lock */ = {
@@ -538,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008E90761C1A1BBF00F9BAD4 /* NetworkManager.swift in Sources */,
 				00EC40EE1C18A82200CC43F4 /* ViewController.swift in Sources */,
 				0094F2E61C18C0ED00FF9646 /* HealthManager.swift in Sources */,
 				00EC40EC1C18A82200CC43F4 /* AppDelegate.swift in Sources */,
@@ -564,9 +660,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008E907E1C1A57FC00F9BAD4 /* NetworkController.swift in Sources */,
 				00EC412B1C18A82200CC43F4 /* NotificationController.swift in Sources */,
+				008E90861C1A723100F9BAD4 /* EventController.swift in Sources */,
+				008E908A1C1A857900F9BAD4 /* UserEvent.swift in Sources */,
 				00EC41291C18A82200CC43F4 /* ExtensionDelegate.swift in Sources */,
 				00EC41271C18A82200CC43F4 /* InterfaceController.swift in Sources */,
+				008E90791C1A1FD400F9BAD4 /* HealthSurveryor.swift in Sources */,
+				008E90881C1A816D00F9BAD4 /* HealthRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,12 +809,17 @@
 		};
 		00EC41321C18A82200CC43F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35E032621E922657930E7CD /* Pods-GoodWatchHuntingApp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit Extension/GoodWatchHuntingApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				POD_FRAMEWORK_BUILD_PATH = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods";
+				POD_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
@@ -726,12 +832,17 @@
 		};
 		00EC41331C18A82200CC43F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF3C207A1C4E39E13CC9368 /* Pods-GoodWatchHuntingApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit Extension/GoodWatchHuntingApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				POD_FRAMEWORK_BUILD_PATH = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods";
+				POD_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
@@ -746,17 +857,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit App/GoodWatchHuntingApp WatchKit App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodWatchHuntingApp/GoodWatchHuntingApp WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -766,17 +881,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "GoodWatchHuntingApp WatchKit App/GoodWatchHuntingApp WatchKit App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GoodWatchHuntingApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GoodWatchHuntingApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mywebgrocer.GoodWatchHuntingApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodWatchHuntingApp/GoodWatchHuntingApp WatchKit App-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -784,7 +902,7 @@
 		};
 		00EC413A1C18A82200CC43F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1194AEC3E0536B7C1BC8C542 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 232AB25328626F44A7842B1F /* Pods-GoodWatchHuntingApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -799,7 +917,7 @@
 		};
 		00EC413B1C18A82200CC43F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5FFB0DC0D5D5737015244A /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3DFA27792C89E67223BD1250 /* Pods-GoodWatchHuntingApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = GoodWatchHuntingApp/GoodWatchHuntingApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -15,12 +15,9 @@ public class HealthManager {
     
     func authorizeHealthKit(completion: ((success:Bool, error:NSError!) -> Void)!) {
         let healthKitReadTypes: Set<HKObjectType> = Set([
-            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyTemperature)!,
-            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierRespiratoryRate)!,
-            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!
         ])
-        
-
         
         if HKHealthStore.isHealthDataAvailable() {
             healthKitStore.requestAuthorizationToShareTypes(nil, readTypes: healthKitReadTypes, completion: { (success, error) -> Void in
